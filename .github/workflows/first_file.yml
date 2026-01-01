@@ -1,0 +1,11 @@
+name: first workflow
+on: workflow_dispatch # this defines when this workflow should be executed. 
+jobs: 
+  first_job:  #name of the job
+    runs-on: ubuntu:latest #runner machine name 
+    steps:
+      - name: Print greeting 
+        run: echo "Hello World"
+      - name: Print thank you 
+        run: echo "Good bue"
+      
