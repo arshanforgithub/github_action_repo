@@ -1,14 +1,11 @@
-name: First_Workflow_with_multiple_bash
-on: workflow_dispatch
-jobs:
-  First_job_a: My job_a
-  runs-on: ubuntu-latest
+name: first workflow
+on: workflow_dispatch # this defines when this workflow should be executed. 
+jobs: 
+  first_job:  #name of the job
+    runs-on: ubuntu-latest #runner machine name 
     steps:
-      - name: Prin-greeting 
-        run: echo "Hello World"
-      - name: Print output 
-        run: echo "Hello blue"
-     
-  
-  
-    
+      - name: Print greeting 
+        run: |
+          echo "Hello World"
+          echo "Good bue"
+      
